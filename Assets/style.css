@@ -1,0 +1,150 @@
+/* declare color variables */
+:root {
+    --dark: #000000;
+    --light: #ececec;
+    --blue: #36374b;
+}
+
+/* Universal */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* paragraph text */
+p {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/* unordered list decoration . none */
+ul {
+    list-style: none;
+}
+
+/* city line items select */
+li {
+    border-bottom: 1px solid var(--light);
+    text-align: left;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/* buttons styling */
+button {
+    background: none;
+    border: none;
+    border: solid 1px var(--dark);
+}
+
+/* hover state on buttons */
+button:hover {
+    background: var(--blue);
+    color: var(--light);
+}
+
+/* column */
+.col {
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+/* search city input area */
+.searchcity {
+    position: absolute;
+    left: 25px;
+    margin-top: 7px;
+    border: none;
+    width: 16rem;
+}
+
+/* class card style */
+.card {
+    border: none;
+    border-bottom: 2px solid var(--dark);
+}
+
+/* card title targeting current forecast */
+.card-title {
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+/* card container for search input */
+.card-con {
+    margin: 0px 0px 0px 0px;
+}
+
+/* class targeting search for a city title */
+.card-subtitle {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+/* 5 day forecast container style */
+.forecast {
+    padding-bottom: 3rem!important;
+}
+
+/* cards styling inside container */
+.forecastyle {
+    padding: 20px;
+    background-color: var(--blue);
+    color: var(--light);
+    float: left;
+    margin: 10px;
+    border: 1px solid var(--light);
+    width: 225px;
+}
+
+/* media queries mobile */
+@media (max-width: 481px) {
+    .forecastyle {
+        margin: -10px 0px 0px -48px;
+        width: 325px;
+    }
+    .searchcity {
+        position: inherit;
+        margin-left: 37px;
+    }
+    .card-con {
+        margin-left: -12px;
+    }
+    .col {
+        margin-left: 27px;
+    }
+    h4 {
+        text-align: center;
+    }
+}
+
+/* media queries tablet */
+@media (min-width: 768px) {
+    .cardcon {
+        margin-left: -388px;
+        margin-top: 300px;
+        padding: 35px;
+    }
+    .searchcity {
+        left: 250px;
+    }
+    .forecastyle {
+        width: 214px;
+        margin: 0px;
+    }
+}
+
+/* media queries laptop+ */
+@media (min-width: 992px) {
+    .cardcon {
+        margin-left: -650px;
+        margin-top: -32px;
+        padding: 35px;
+    }
+    .searchcity {
+        left: 70px;
+    }
+    .forecastyle {
+        width: 225px;
+        margin: 10px;
+    }
+}
