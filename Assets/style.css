@@ -126,6 +126,7 @@ button:hover {
     }
     .searchcity {
         left: 250px;
+        padding: 5px;
     }
     .forecastyle {
         width: 214px;
@@ -136,12 +137,13 @@ button:hover {
 /* media queries laptop+ */
 @media (min-width: 992px) {
     .cardcon {
-        margin-left: -650px;
+        margin-left: -380px;
         margin-top: -32px;
         padding: 35px;
     }
     .searchcity {
-        left: 70px;
+        left: 350px;
+        padding: 5px;
     }
     .forecastyle {
         width: 225px;
